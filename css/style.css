@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'comic';
+    src: url('../source/font/comic.ttf');
+    font-stretch: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: comic;
+    box-sizing: border-box;
+}
+main{
+    height: 1020px;
+    background-image: url('../source/img/back.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    height: 600px;
+    background: white;
+    width: 60%;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.5),rgba(255,255,255,0.3));
+    border-radius: 3rem;
+}
+
+.glass2{
+    height: 600px;
+    background: white;
+    width: 20%;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.9),rgba(255,255,255,0.7));
+    border-radius: 2rem;
+}
+
+.logo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+proj{
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.projleft{
+    text-align: left;
+    width: 0%;
+    height: auto;
+}
+
+.projimg{
+    width: 90%;
+    height: auto;
+    border-radius: 5%;
+    opacity: 80%;
+}
+
+.projt{
+    width: 100%;
+    height: auto;
+    border-collapse: separate;
+    border-spacing: 40px 30px;
+}
