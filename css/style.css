@@ -9,8 +9,14 @@
     font-family: comic;
     box-sizing: border-box;
 }
+
+copyright{
+    font-size: 100%;
+}
+
 main{
     height: 1020px;
+    width: auto;
     background-image: url('../source/img/back.png');
     display: flex;
     align-items: center;
@@ -20,19 +26,10 @@ main{
 .glass{
     height: 600px;
     background: white;
-    width: 60%;
+    width: 1090px;
     background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.5),rgba(255,255,255,0.3));
     border-radius: 3rem;
 }
-
-.glass2{
-    height: 600px;
-    background: white;
-    width: 20%;
-    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.9),rgba(255,255,255,0.7));
-    border-radius: 2rem;
-}
-
 .logo{
     flex: 1;
     display: flex;
@@ -41,9 +38,36 @@ main{
     justify-content: center;
 }
 
+.buttom{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 proj{
-    font-size: 140%;
+    font-size: 22.3px;
     font-weight: bold;
+}
+
+tag{
+    margin: 3px;
+    padding: 3px;
+    font-size: 90%;
+    font-weight: normal;
+    background-color: rgba(0, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,255,255,0.2);
+    color: rgb(0,0,0);
+}
+
+img{
+    transition: all 0.35s;
+}
+
+img:hover{
+    transform:scale(1.1);
 }
 
 .projleft{
@@ -58,10 +82,16 @@ proj{
     border-radius: 5%;
     opacity: 80%;
 }
-
 .projt{
     width: 100%;
     height: auto;
     border-collapse: separate;
     border-spacing: 40px 30px;
+    position: absolute;
+}
+
+.contact{
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
 }
